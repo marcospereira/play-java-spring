@@ -12,6 +12,8 @@ libraryDependencies ++= Seq(
   "org.springframework" % "spring-tx" % "4.1.1.RELEASE",
   "org.springframework" % "spring-expression" % "4.1.1.RELEASE",
   "org.springframework" % "spring-aop" % "4.1.1.RELEASE",
+  "org.springframework" % "spring-context-support" % "4.1.1.RELEASE",
+  "net.sf.ehcache" % "ehcache" % "2.10.4",
   "org.springframework" % "spring-test" % "4.1.1.RELEASE" % "test",
   "org.hibernate" % "hibernate-entitymanager" % "4.3.6.Final"
 )
