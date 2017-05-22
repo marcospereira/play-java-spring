@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ehcache>
+
+    <defaultCache maxEntriesLocalHeap="0"
+                  eternal="false"
+                  timeToIdleSeconds="10"
+                  timeToLiveSeconds="10" />
+
+    <cache name="bars"
+           maxEntriesLocalHeap="500"
+           eternal="false"
+           timeToIdleSeconds="10"
+           timeToLiveSeconds="10"
+           memoryStoreEvictionPolicy="LFU" />
+</ehcache>

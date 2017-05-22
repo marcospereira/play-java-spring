@@ -2,9 +2,9 @@ package services;
 
 
 import models.Bar;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import play.Logger;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -24,6 +24,7 @@ public class BarServiceImpl implements BarService {
     }
 
     @Override
+    @Cacheable("bars")
     public List<Bar> getAllBars() {
         CriteriaQuery<Bar> c = em.getCriteriaBuilder().createQuery(Bar.class);
         c.from(Bar.class);
